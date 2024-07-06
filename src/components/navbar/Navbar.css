@@ -43,6 +43,20 @@
     width: 50%;
 }
 
+.cart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart span{
+    background: red;
+    color: white;
+    padding: 0px 7px;
+    border-radius: 10px;
+}
+
 .search .input-search{
     width: 100%;
 }
@@ -54,3 +68,36 @@
     align-items: center;
     padding: 30px 15px;
 }
+
+.NavbarWeb{
+    display: none;
+}
+
+
+@media (min-width: 769px) {
+    .NavbarWeb{
+        display: block;
+    }
+    .NavbarMobile{
+        display: none;
+    }
+
+    .nav-row{
+        padding: 15px 0;
+    }
+
+    .my-account{
+        padding: 0;
+    }
+
+    .nav-item.search{
+        width: 50%;
+    }
+
+    .nav-item.user{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+  }

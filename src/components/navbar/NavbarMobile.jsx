@@ -40,8 +40,9 @@ const [open, setOpen] = useState(false);
                 <div className="nav-item logo">
                     <img src={logo} alt="logo-corebiz" />
                 </div>
-                <div className="nav-item">
+                <div className="nav-item cart">
                     <img src={cartIcon} alt="cart-item" />
+                    <span>0</span>
                 </div>
             </div>
             <div className="nav-row second-row">
