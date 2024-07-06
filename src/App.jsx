@@ -1,15 +1,13 @@
 import './App.css'
 
-import NavbarMobile from './components/navbar/NavbarMobile'
-import NavbarWeb from './components/navbar/NavbarWeb'
+import Navbar from './components/navbar/Navbar'
 
 function App() {
 
   return (
     <>
       <div className='App'>
-        <NavbarWeb />
-        <NavbarMobile />
+        <Navbar />
       </div>
     </>
   )
