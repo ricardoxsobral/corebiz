@@ -1,0 +1,56 @@
+.NavbarMobile{
+    padding: 10px 0;
+}
+
+.NavbarMobile .second-row{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.nav-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-search {
+    flex: 1;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    pointer-events: none;   
+  }
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo img{
+    width: 50%;
+}
+
+.search .input-search{
+    width: 100%;
+}
+
+.my-account{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding: 30px 15px;
+}
