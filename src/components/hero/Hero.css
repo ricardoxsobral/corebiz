@@ -1,0 +1,12 @@
+.Hero{
+    margin-top: 15px;
+}
+
+.Hero img{
+    width: 100%;
+}
+
+
+.swiper-pagination-bullet-active{
+    background-color: #F8475F !important;
+}
