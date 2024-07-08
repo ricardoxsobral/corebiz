@@ -111,9 +111,27 @@
   display: none !important;
 }
 
+.buy-button{
+  color: white;
+  background: black;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  line-height: 17.59px;
+  padding: 10px 50px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
 @media (min-width: 1023px) {
   .slick-dots li button {
     display: none;
+  }
+
+  .slick-track{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
   }
 
   .slick-arrow {
@@ -133,4 +151,27 @@
     right: -50px;
   }
 
+  .buy-button {
+    display: none;
+    transition: opacity 0.1s ease;
+  }
+
+  .product-card:hover .buy-button {
+    display: block; 
+    opacity: 1;
+  }
+
+  .product-card {
+    transition: background-color 0.3s;
+  }
+
+  .product-card:hover {
+    background-color: #E6E8EA;
+    padding-bottom: 20px;
+    border-radius: 20px;
+  }
+
+  .Products .product-card .product-image {
+    width: 100%;
+  }
 }

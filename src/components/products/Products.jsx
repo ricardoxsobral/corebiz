@@ -92,20 +92,22 @@ function Products({ updateCartCount }) {
           {products.map(product => (
             <div key={product.productId} className="product-card">
               <img src={product.imageUrl} alt={product.productName} className="product-image" />
-              <h2 className="product-name">{product.productName}</h2>
-              <div className="product-stars">{'★'.repeat(product.stars) + '☆'.repeat(5 - product.stars)}</div>
-              {product.listPrice && (
-                <div className="product-list-price">De: R${(product.listPrice / 100).toFixed(2)}</div>
-              )}
-              <div className="product-price">Por: R${(product.price / 100).toFixed(2)}</div>
-              {product.installments.length > 0 && (
-                <div className="product-installments">
-                  ou {product.installments[0].quantity}x de R${(product.installments[0].value / 100).toFixed(2)}
-                </div>
-              )}
-              <button className="buy-button" onClick={() => handleBuyProduct(product)}>
-                Comprar
-              </button>
+              <div className="card-info">
+                <h2 className="product-name">{product.productName}</h2>
+                <div className="product-stars">{'★'.repeat(product.stars) + '☆'.repeat(5 - product.stars)}</div>
+                {product.listPrice && (
+                  <div className="product-list-price">De: R${(product.listPrice / 100).toFixed(2)}</div>
+                )}
+                <div className="product-price">Por: R${(product.price / 100).toFixed(2)}</div>
+                {product.installments.length > 0 && (
+                  <div className="product-installments">
+                    ou {product.installments[0].quantity}x de R${(product.installments[0].value / 100).toFixed(2)}
+                  </div>
+                )}
+                <button className="buy-button" onClick={() => handleBuyProduct(product)}>
+                  COMPRAR
+                </button>
+              </div>
             </div>
           ))}
         </Slider>
