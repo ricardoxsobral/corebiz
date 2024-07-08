@@ -1,13 +1,12 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Container from '@mui/material/Container';
+
 
 import useMedia from '../../hooks/CustomHokkie';
 
 import './Hero.css'
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-import bannerMobile from '../../assets/Banner.png'
-import bannerWeb from '../../assets/BannerWeb.jpg'
 
 import { Pagination } from 'swiper/modules';
 
@@ -28,14 +27,50 @@ function Hero() {
                 modules={[Pagination]}
                 className="mySwiper"
             >
-                <SwiperSlide><img src={bannerMobile} alt="img-slider" /></SwiperSlide>
-                <SwiperSlide><img src={bannerMobile} alt="img-slider" /></SwiperSlide>
-                <SwiperSlide><img src={bannerMobile} alt="img-slider" /></SwiperSlide>
-                <SwiperSlide><img src={bannerMobile} alt="img-slider" /></SwiperSlide>
+                <SwiperSlide>
+                  <div className="bg-slider">
+                    <Container>
+                      <div className="text-slider">
+                        <h3>Olá, o que você está <br /> buscando?</h3>
+                        <h1>Criar ou migrar seu <br /> e-commerce?</h1>
+                      </div>
+                    </Container>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="bg-slider">
+                    <Container>
+                      <div className="text-slider">
+                        <h3>Olá, o que você está <br /> buscando?</h3>
+                        <h1>Criar ou migrar seu <br /> e-commerce?</h1>
+                      </div>
+                    </Container>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="bg-slider">
+                    <Container>
+                      <div className="text-slider">
+                        <h3>Olá, o que você está <br /> buscando?</h3>
+                        <h1>Criar ou migrar seu <br /> e-commerce?</h1>
+                      </div>
+                    </Container>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="bg-slider">
+                    <Container>
+                      <div className="text-slider">
+                        <h3>Olá, o que você está <br /> buscando?</h3>
+                        <h1>Criar ou migrar seu <br /> e-commerce?</h1>
+                      </div>
+                    </Container>
+                  </div>
+                </SwiperSlide>
             </Swiper>
         </div>
       ) : isWebDevice ? (
-        <div className="Hero">
+        <div className="HeroWeb">
             <Swiper
                 spaceBetween={30}
                 pagination={{
@@ -44,10 +79,46 @@ function Hero() {
                 modules={[Pagination]}
                 className="mySwiper"
             >
-                <SwiperSlide><img src={bannerWeb} alt="img-slider" /></SwiperSlide>
-                <SwiperSlide><img src={bannerWeb} alt="img-slider" /></SwiperSlide>
-                <SwiperSlide><img src={bannerWeb} alt="img-slider" /></SwiperSlide>
-                <SwiperSlide><img src={bannerWeb} alt="img-slider" /></SwiperSlide>
+                <SwiperSlide>
+                  <div className="bg-slider">
+                    <Container>
+                      <div className="text-slider">
+                        <h3>Olá, o que você está <br /> buscando?</h3>
+                        <h1>Criar ou migrar seu <br /> e-commerce?</h1>
+                      </div>
+                    </Container>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="bg-slider">
+                    <Container>
+                      <div className="text-slider">
+                        <h3>Olá, o que você está <br /> buscando?</h3>
+                        <h1>Criar ou migrar seu <br /> e-commerce?</h1>
+                      </div>
+                    </Container>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="bg-slider">
+                    <Container>
+                      <div className="text-slider">
+                        <h3>Olá, o que você está <br /> buscando?</h3>
+                        <h1>Criar ou migrar seu <br /> e-commerce?</h1>
+                      </div>
+                    </Container>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="bg-slider">
+                    <Container>
+                      <div className="text-slider">
+                        <h3>Olá, o que você está <br /> buscando?</h3>
+                        <h1>Criar ou migrar seu <br /> e-commerce?</h1>
+                      </div>
+                    </Container>
+                  </div>
+                </SwiperSlide>
             </Swiper>
         </div>
       ) : null}
