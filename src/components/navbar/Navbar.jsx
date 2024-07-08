@@ -1,3 +1,4 @@
+import React from 'react';
 import Container from '@mui/material/Container';
 import Drawer from '@mui/material/Drawer';
 import TextField from '@mui/material/TextField';
@@ -12,13 +13,10 @@ import './Navbar.css';
 
 import useMedia from '../../hooks/CustomHokkie';
 
-import { useState } from 'react';
-
-function Navbar() {
+function Navbar({ cartCount }) {
   const isMobileDevice = useMedia('mobile');
   const isWebDevice = useMedia('web');
-
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
@@ -44,7 +42,7 @@ function Navbar() {
               </div>
               <div className="nav-item cart">
                 <img src={cartIcon} alt="cart-item" />
-                <span>0</span>
+                <span>{cartCount}</span>
               </div>
             </div>
             <div className="nav-row second-row">
@@ -73,7 +71,7 @@ function Navbar() {
                 </div>
                 <div className="cart">
                   <img src={cartIcon} alt="cart-item" />
-                  <span>0</span>
+                  <span>{cartCount}</span>
                 </div>
               </div>
             </div>
