@@ -73,6 +73,9 @@
 
 
 @media (min-width: 769px) {
+    .logo{
+        justify-content: flex-start;
+    }
     .nav-row{
         padding: 15px 0;
     }

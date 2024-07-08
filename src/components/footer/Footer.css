@@ -15,6 +15,9 @@
 
 .Footer .footer-content .footer-item.info{
     color: #fff;
+}
+
+.Footer .footer-content .footer-item.info h1{
     font-size: 18px;
 }
 

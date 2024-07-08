@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 .Hero{
     margin-top: 5px;
+    font-family: "Nunito", sans-serif;
 }
 
 .HeroWeb{
     margin-top: 5px;
+    font-family: "Nunito", sans-serif;
 }
 
 .HeroWeb .bg-slider{
@@ -12,6 +16,9 @@
     background-image: url('../../assets/BannerWeb.png');
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
 .Hero .bg-slider{
@@ -20,33 +27,34 @@
   background-image: url('../../assets/Banner.png');
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .Hero .bg-slider .text-slider{
     color: white;
-    padding: 45px 0;
 }
 
 .HeroWeb .bg-slider .text-slider{
     color: white;
-    padding: 105px 0;
 }
 
 .Hero .bg-slider .text-slider h3{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .Hero .bg-slider .text-slider h1{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 900;
 }
 
 .HeroWeb .bg-slider .text-slider h3{
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .HeroWeb .bg-slider .text-slider h1{
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 900;
 }
 
