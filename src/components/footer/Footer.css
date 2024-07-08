@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.Footer{
+    background-color: black;
+    padding: 30px 0;
+    font-family: "Nunito", sans-serif;
+}
+
+.Footer .footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.Footer .footer-content .footer-item.info{
+    color: #fff;
+    font-size: 18px;
+}
+
+.Footer .footer-content .footer-item.info .info-item{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.Footer .footer-content .footer-item.info .info-item.addres {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Footer .footer-content hr{
+    border: none;
+    opacity: 100;
+    height: 5px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    width: 45px;
+}
+
+.Footer .footer-content .footer-item.cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 20px;
+}
+
+.Footer .footer-content .footer-item.cta .btn-cta{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.Footer .footer-content .footer-item.cta .btn-cta .text{
+    display: flex;
+    flex-direction: column;
+    line-height: 15px;
+    font-weight: 600;
+}
+
+.Footer .footer-content .footer-item.cta .btn-cta .text .text1{
+    letter-spacing: 1px;
+}
+
+.Footer .footer-content .footer-item .logo-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30%;
+}
+
+.Footer .footer-content .footer-item .logo-footer .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 60%;
+    line-height: 15px;
+}
+
+.Footer .footer-content .footer-item .logo-footer .logo img{
+    width: 100%;
+}
+
+@media (min-width: 769px) {
+    .Footer .footer-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
