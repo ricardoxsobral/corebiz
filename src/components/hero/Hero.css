@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 .Hero{
+    padding-top: 100px;
     margin-top: 5px;
     font-family: "Nunito", sans-serif;
 }
 
 .HeroWeb{
+    padding-top: 70px;
     margin-top: 5px;
     font-family: "Nunito", sans-serif;
 }

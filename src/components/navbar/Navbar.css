@@ -6,6 +6,18 @@
     display: block;
     width: 100%;
     margin-top: 10px;
+    top: -10px;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+}
+
+.NavbarWeb {
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
 }
 
 .nav-row {
@@ -56,12 +68,12 @@
     line-height: 13.64px;
     font-weight: 700;
     background: #F8475F;
-    color: white;    
+    color: white;
     padding: 6px 7px;
     border-radius: 15px;
 }
 
-.cart img{
+.cart img {
     cursor: pointer;
 }
 
