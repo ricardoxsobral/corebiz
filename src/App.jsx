@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Navbar cartCount={cartCount} />
+      <Navbar cartCount={cartCount} updateCartCount={updateCartCount}/>
       <Hero />
       <Products updateCartCount={updateCartCount} />
       <Newsletter />

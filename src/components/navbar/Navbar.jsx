@@ -3,6 +3,8 @@ import Container from '@mui/material/Container';
 import Drawer from '@mui/material/Drawer';
 import TextField from '@mui/material/TextField';
 
+import Cart from '../cart/Cart';
+
 import logo from '../../assets/site-logo-corebiz-preto-cinza.png';
 import menuLogo from '../../assets/Icon.png';
 import cartIcon from '../../assets/shopping-cart.png';
@@ -13,13 +15,18 @@ import './Navbar.css';
 
 import useMedia from '../../hooks/CustomHokkie';
 
-function Navbar({ cartCount }) {
+function Navbar({ cartCount, updateCartCount }) {
   const isMobileDevice = useMedia('mobile');
   const isWebDevice = useMedia('web');
   const [open, setOpen] = React.useState(false);
+  const [openCart, setOpenCart] = React.useState(false);
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
+  };
+
+  const toggleCartDrawer = (newCartOpen) => () => {
+    setOpenCart(newCartOpen);
   };
 
   return (
@@ -41,7 +48,10 @@ function Navbar({ cartCount }) {
                 <img src={logo} alt="logo-corebiz" />
               </div>
               <div className="nav-item cart">
-                <img src={cartIcon} alt="cart-item" />
+                <img onClick={toggleCartDrawer(true)} src={cartIcon} alt="cart-item" />
+                <Drawer anchor="right" open={openCart} onClose={toggleCartDrawer(false)}>
+                  <Cart updateCartCount={updateCartCount} />
+                </Drawer>
                 <span>{cartCount}</span>
               </div>
             </div>
@@ -70,7 +80,10 @@ function Navbar({ cartCount }) {
                   <div><p>Minha Conta</p></div>
                 </div>
                 <div className="cart">
-                  <img src={cartIcon} alt="cart-item" />
+                  <img onClick={toggleCartDrawer(true)} src={cartIcon} alt="cart-item" />
+                  <Drawer anchor="right" open={openCart} onClose={toggleCartDrawer(false)}>
+                    <Cart updateCartCount={updateCartCount} />
+                  </Drawer>
                   <span>{cartCount}</span>
                 </div>
               </div>

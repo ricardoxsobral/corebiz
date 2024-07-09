@@ -52,6 +52,7 @@
 }
 
 .Products .product-card .product-list-price {
+  min-height: 16px;
   font-size: 12px;
   font-weight: 400;
   line-height: 16.37px;
@@ -121,6 +122,11 @@
   padding: 10px 50px;
   font-weight: 500;
   margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover{
+  background-color: #333333;
 }
 
 @media (min-width: 1023px) {
@@ -173,5 +179,9 @@
 
   .Products .product-card .product-image {
     width: 100%;
+  }
+
+  .Products .product-card .product-list-price{
+    height: 20px;
   }
 }

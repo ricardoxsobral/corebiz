@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.Cart {
+    font-family: "Nunito", sans-serif;
+    padding: 30px 10px;
+}
+
+.Cart .cart-product-info{
+    margin-bottom: 30px;
+}
+
+.Cart  .divisor{
+    width: 100%;
+}
+
+.Cart h2 {
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+}
+
+.Cart hr {
+    border: none;
+    height: 5px;
+    background-color: #C0C0C0;
+    margin: 0;
+    width: 45px;
+    opacity: 100;
+}
+
+.Cart .cart-product .product-name {
+    font-size: 12px;
+    line-height: 16.37px;
+    font-weight: 600;
+    color: #7A7A7A;
+}
+
+.Cart .cart-product .product-price {
+    font-size: 16px;
+    line-height: 16.37px;
+    font-weight: 600;
+    color: #7A7A7A;
+}
+
+.Cart .cart-product .quantity {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.55px;
+    color: #000000;
+}
+
+.Cart .cart-product .remove-button {
+    color: white;
+    background: black;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+    line-height: 17.59px;
+    padding: 10px 50px;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.Cart .cart-product .remove-button:hover {
+    background-color: #333333;
+}

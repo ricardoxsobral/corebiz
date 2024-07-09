@@ -43,11 +43,18 @@ function Products({ updateCartCount }) {
 
   const handleBuyProduct = (product) => {
     const storedProducts = JSON.parse(localStorage.getItem('cart')) || [];
-    storedProducts.push(product);
+    const productIndex = storedProducts.findIndex(p => p.productId === product.productId);
+
+    if (productIndex > -1) {
+      storedProducts[productIndex].quantity += 1;
+    } else {
+      storedProducts.push({ ...product, quantity: 1 });
+    }
+
     localStorage.setItem('cart', JSON.stringify(storedProducts));
 
     // Atualiza o contador de produtos no carrinho
-    updateCartCount(storedProducts.length);
+    updateCartCount(storedProducts.reduce((acc, product) => acc + product.quantity, 0));
 
     console.log(`Produto "${product.productName}" adicionado ao carrinho!`);
   };

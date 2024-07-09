@@ -61,6 +61,10 @@
     border-radius: 15px;
 }
 
+.cart img{
+    cursor: pointer;
+}
+
 .search .input-search {
     width: 100%;
 }
