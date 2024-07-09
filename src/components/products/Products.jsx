@@ -83,9 +83,9 @@ function Products({ updateCartCount }) {
         }
       },
       {
-        breakpoint: 769,
+        breakpoint: 400,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1
         }
