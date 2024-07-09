@@ -33,6 +33,10 @@
   margin-bottom: 30px;
 }
 
+.Products .card-info {
+  min-height: 107px;
+}
+
 .Products .product-card .product-image {
   width: 90%;
   margin-bottom: 10px;

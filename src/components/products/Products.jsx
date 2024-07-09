@@ -116,10 +116,10 @@ function Products({ updateCartCount }) {
                     ou {product.installments[0].quantity}x de R${(product.installments[0].value / 100).toFixed(2)}
                   </div>
                 )}
-                <button className="buy-button" onClick={() => handleBuyProduct(product)}>
-                  COMPRAR
-                </button>
               </div>
+              <button className="buy-button" onClick={() => handleBuyProduct(product)}>
+                COMPRAR
+              </button>
             </div>
           ))}
         </Slider>
