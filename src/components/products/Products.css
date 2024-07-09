@@ -167,8 +167,9 @@
     opacity: 1;
   }
 
-  .product-card {
+  .Products .product-card {
     transition: background-color 0.3s;
+    margin-bottom: 0;
   }
 
   .product-card:hover {
@@ -183,5 +184,9 @@
 
   .Products .product-card .product-list-price{
     height: 20px;
+  }
+
+  .slick-initialized .slick-slide{
+    min-height: 425px;
   }
 }
