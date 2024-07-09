@@ -25,6 +25,7 @@ Certifique-se de ter instalado o Node.js (versão 14 ou superior) e o npm (geren
 3. **Abra outro terminal e inicilize a porta 3001, para rodar o mock da API :**
 
     ```bash
+   npm install -g json-server 
    json-server --watch db.json --port 3001
 
 4. **Abra outro terminal e inicilize a porta 3002, para rodar o servidor dos Assinantes da newsletter :**
