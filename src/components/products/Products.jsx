@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Container from '@mui/material/Container';
 import Slider from 'react-slick';
-
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Products.css';
@@ -9,17 +8,23 @@ import './Products.css';
 import prevArrowImg from '../../assets/left-arrow.png';
 import nextArrowImg from '../../assets/right-arrow.png';
 
-const CustomPrevArrow = (props) => (
-  <button {...props} className="slick-arrow slick-prev">
-    <img src={prevArrowImg} alt="Prev" />
-  </button>
-);
+const CustomPrevArrow = (props) => {
+  const { className, onClick } = props;
+  return (
+    <button className={`${className} slick-arrow slick-prev`} onClick={onClick}>
+      <img src={prevArrowImg} alt="Prev" />
+    </button>
+  );
+};
 
-const CustomNextArrow = (props) => (
-  <button {...props} className="slick-arrow slick-next">
-    <img src={nextArrowImg} alt="Next" />
-  </button>
-);
+const CustomNextArrow = (props) => {
+  const { className, onClick } = props;
+  return (
+    <button className={`${className} slick-arrow slick-next`} onClick={onClick}>
+      <img src={nextArrowImg} alt="Next" />
+    </button>
+  );
+};
 
 function Products({ updateCartCount }) {
   const [products, setProducts] = useState([]);
