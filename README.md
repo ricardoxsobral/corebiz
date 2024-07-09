@@ -34,6 +34,6 @@ Certifique-se de ter instalado o Node.js (versão 14 ou superior) e o npm (geren
 
 5. **Acesse a aplicação:**
 
-    Digite "http://localhost:5173/"
+    Digite "http://localhost:5173/" ou acesse 'https://corebiz-rho.vercel.app/'
 
 
