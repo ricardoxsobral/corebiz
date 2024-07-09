@@ -1,8 +1,39 @@
-# React + Vite
+# Projeto CoreBiz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de exemplo utilizando React, Material UI, e várias outras bibliotecas para criar uma aplicação web.
 
-Currently, two official plugins are available:
+## Pré-requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Certifique-se de ter instalado o Node.js (versão 14 ou superior) e o npm (gerenciador de pacotes do Node.js).
+
+- [Node](https://nodejs.org/docs/latest/api/)
+
+## Instalação
+
+1. **Clone o repositório:**
+
+    ```bash
+   git clone git@github.com:ricardoxsobral/corebiz.git
+   cd corebiz
+
+2. **Instale o React:**
+
+    ```bash
+   npm install
+   npm run dev
+
+3. **Abra outro terminal e inicilize a porta 3001, para rodar o mock da API :**
+
+    ```bash
+   json-server --watch db.json --port 3001
+
+4. **Abra outro terminal e inicilize a porta 3002, para rodar o servidor dos Assinantes da newsletter :**
+
+    ```bash
+   node server/server.js
+
+5. **Acesse a aplicação:**
+
+    Digite "http://localhost:5173/"
+
+
