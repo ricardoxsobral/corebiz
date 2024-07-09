@@ -4,7 +4,7 @@
         "productId": 1,
         "productName": "SAPATO FLOATER PRETO",
         "stars": 1,
-        "imageUrl": "./src/assets/sapato.png",
+        "imageUrl": "../src/assets/sapato.png",
         "listPrice": null,
         "price": 25990,
         "installments": [
