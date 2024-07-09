@@ -33,7 +33,7 @@ function Navbar({ cartCount }) {
                 <Drawer open={open} onClose={toggleDrawer(false)}>
                   <div className="my-account">
                     <img src={user} alt="user-icon" />
-                    <div>Minha Conta</div>
+                    <div><p>Minha Conta</p></div>
                   </div>
                 </Drawer>
               </div>
@@ -67,7 +67,7 @@ function Navbar({ cartCount }) {
               <div className="nav-item user">
                 <div className="my-account">
                   <img src={user} alt="user-icon" />
-                  <div>Minha Conta</div>
+                  <div><p>Minha Conta</p></div>
                 </div>
                 <div className="cart">
                   <img src={cartIcon} alt="cart-item" />

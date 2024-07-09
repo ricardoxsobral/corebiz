@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Newsletter.css';
 import { Container } from '@mui/material';
 
+
 function Newsletter() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -102,7 +103,7 @@ function Newsletter() {
         )}
         {submitted && (
           <div className="success-message">
-            <p>Formulário enviado com sucesso!</p>
+            <p><span>Seu e-mail foi cadastrado com sucesso!</span><br />A partir de agora você receberá as novidade e ofertas exclusivas.</p>
             <button onClick={handleReturn}>Voltar para o formulário</button>
           </div>
         )}
