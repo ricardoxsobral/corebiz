@@ -31,6 +31,7 @@ Certifique-se de ter instalado o Node.js (versão 14 ou superior) e o npm (geren
 4. **Abra outro terminal e inicilize a porta 3002, para rodar o servidor dos Assinantes da newsletter :**
 
     ```bash
+   npm install express (caso não tenha instalado o express em sua máquina ainda) 
    node server/server.js
 
 5. **Acesse a aplicação:**
